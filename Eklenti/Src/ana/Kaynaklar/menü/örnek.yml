@@ -8,7 +8,7 @@ menu-settings:
 
   # REQUIRED
   # Appears as the title of the menu.
-  name: '&1Example menu'
+  name: '&1PixelLevha Menü'
 
   # REQUIRED
   # The number of rows in the menu.
@@ -26,7 +26,7 @@ menu-settings:
   # OPTIONAL
   # This command command will be executed when the menu is opened.
   # Supports all the icon command types.
-  open-action: 'tell: &eYou opened the example menu.'
+  open-action: 'tell: &eMenü Acılıyor.'
 
   # OPTIONAL
   # This command command will be executed when the menu is closed.
@@ -37,7 +37,7 @@ menu-settings:
   # The menu will open only when right-clicking with a compass.
   open-with-item:
     id: compass
-    left-click: false
+    left-click: true
     right-click: true
 
 
@@ -61,10 +61,10 @@ default-icon:
 
 spawncmd:
   COMMAND: 'spawn'
-  NAME: '&e/spawn'
+  NAME: '&e/Spawn'
   LORE:
-    - 'It justs executes /spawn'
-    - 'as the player who clicked.'
+    left-click: true
+    right-click: true
   ID: enderpearl
   POSITION-X: 1
   POSITION-Y: 1
